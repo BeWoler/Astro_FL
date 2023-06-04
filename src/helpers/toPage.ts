@@ -1,3 +1,5 @@
-export const toPage = (link: string, time: number): void => {
-  setTimeout(() => (location.href = link), time);
+export const toPage = (link: string, time?: number): void => {
+  time
+    ? setTimeout(() => (location.href = link), time)
+    : (location.href = link);
 };
