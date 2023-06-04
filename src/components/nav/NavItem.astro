@@ -1,0 +1,10 @@
+---
+import Link from "../common/link/Link.astro";
+import type { INavItem } from "./nav.interface";
+
+const { title, href } = Astro.props as INavItem;
+---
+
+<div>
+  <Link href={href} title={title} />
+</div>

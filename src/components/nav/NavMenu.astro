@@ -1,0 +1,20 @@
+---
+import NavItem from "./NavItem.astro";
+import type { INavProps } from "./nav.interface";
+
+const { links } = Astro.props as INavProps;
+---
+
+<nav class='p-3 w-fit'>
+  <ul class='flex gap-3'>
+    {
+      links.map((item) => {
+        return (
+          <li class='inline-flex'>
+            <NavItem title={item.title} href={item.href} />
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
