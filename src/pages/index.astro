@@ -1,7 +1,18 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/Layout.astro";
+import CatPic from "../assets/imgs/cat.jpg";
 ---
 
 <Layout title='Welcome to Astro.'>
-  <div>Main</div>
+  <div class='flex flex-col justify-center items-center gap-4'>
+    <p class='text-4xl'>
+      This app is only a first look at the Astro framework and does not make any
+      sense
+    </p>
+    <p class='text-2xl'>Take a better look at the kitty :)</p>
+  </div>
+  <div class="flex justify-center">
+    <Image width={500} height={300} src={CatPic} alt='cat' />
+  </div>
 </Layout>

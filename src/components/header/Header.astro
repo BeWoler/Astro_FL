@@ -4,11 +4,10 @@ import NavMenu from "../nav/NavMenu.astro";
 const linksData = [
   { title: "Home", href: "/" },
   { title: "Posts", href: "/posts" },
-  { title: "About", href: "/about" },
-  { title: "Contact", href: "/contact" },
+  { title: "404", href: "/any_route" },
 ];
 ---
 
-<header class="flex w-full bg-slate-500 mb-5 justify-end">
+<header class='flex w-full bg-slate-500 mb-5 justify-end'>
   <NavMenu links={linksData} />
 </header>
